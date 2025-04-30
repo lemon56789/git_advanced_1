@@ -2,7 +2,11 @@ from typing import List
 
 # Skeleton code for even_list
 def even_list(int_list: List[int]) -> List[int]: 
-    pass
+    result = []
+    for i in int_list:
+        if i % 2 == 0:
+            result.append(i)
+    return result
 
 # Skeleton code for sum_of_squares_of_even
 def sum_of_squares_of_even(even_int_list: List[int]) -> int:
